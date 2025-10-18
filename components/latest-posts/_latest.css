@@ -1,0 +1,71 @@
+/* _latest.css — Section Artikel Terbaru */
+@import url("components/category-blocks/_blocks.css");
+
+
+.latest-posts {
+  margin-top: 40px;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.posts-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Kartu Artikel */
+.post-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.post-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.post-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.post-content {
+  padding: 15px;
+}
+
+.post-content h3 {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.post-content a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.post-content a:hover {
+  text-decoration: underline;
+}
+
+.post-content p {
+  font-size: 0.95rem;
+  color: #444;
+  line-height: 1.5;
+}
+
+/* Layout Desktop */
+@media (min-width: 768px) {
+  .posts-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

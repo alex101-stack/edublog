@@ -1,0 +1,80 @@
+/* _blocks.css — Kategori Blok */
+
+.category-blocks {
+  margin-top: 60px;
+}
+
+.section-title {
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.category-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+/* Kartu Kategori */
+.category-card {
+  background: #fff;
+  border-radius: 8px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.category-card h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.category-card p {
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin-bottom: 15px;
+}
+
+.btn-category {
+  display: inline-block;
+  background: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.btn-category:hover {
+  background: #0056b3;
+}
+
+/* Tema warna lembut untuk tiap kategori */
+.frontend { border-left: 6px solid #00b894; }
+.backend { border-left: 6px solid #0984e3; }
+.uiux { border-left: 6px solid #e17055; }
+.tools { border-left: 6px solid #6c5ce7; }
+
+/* Layout Desktop */
+@media (min-width: 768px) {
+  .category-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .category-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

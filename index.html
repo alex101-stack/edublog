@@ -1,0 +1,156 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>EduBlog</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+  <h1>EduBlog</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">Articles</a>
+    <a href="#">About</a>
+  </nav>
+</header>
+
+
+  <!-- HERO -->
+  <section class="hero">
+  <div class="hero-content">
+    <h2 class="hero-title">Belajar Web Development Lebih Terarah</h2>
+    <p class="hero-subtitle">
+      Panduan, artikel, dan sumber belajar untuk semua level — dari dasar hingga mahir.
+      Jelajahi kategori, temukan topik yang relevan, dan kembangkan keterampilanmu hari ini.
+    </p>
+    <a href="#categories" class="hero-btn">Mulai Eksplorasi</a>
+  </div>
+</section>
+
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+  <!-- Tentang Penulis -->
+  <section class="widget about-author">
+    <h3>Tentang Penulis</h3>
+    <img src="assets/images/author.jpg" alt="Foto penulis" class="author-photo">
+    <p>Saya pengembang web dan penulis di EduBlog. Menulis tentang front-end, back-end, dan strategi belajar efektif.</p>
+  </section>
+
+  <!-- Tag Cloud -->
+  <section class="widget tag-cloud">
+    <h3>Topik Populer</h3>
+    <div class="tags">
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+      <a href="#">JavaScript</a>
+      <a href="#">Node.js</a>
+      <a href="#">UI/UX</a>
+      <a href="#">Git</a>
+      <a href="#">Tools</a>
+    </div>
+  </section>
+
+  <!-- Newsletter -->
+  <section class="widget newsletter">
+    <h3>Langganan Gratis</h3>
+    <p>Dapatkan panduan, tips, dan ebook langsung ke email kamu.</p>
+    <form class="newsletter-form">
+      <input type="email" placeholder="Alamat email" required>
+      <button type="submit">Langganan</button>
+    </form>
+  </section>
+
+  <!-- Slot Iklan / Follow -->
+  <section class="widget follow-us">
+    <h3>Ikuti Kami</h3>
+    <div class="social-links">
+      <a href="#">🐦 Twitter</a>
+      <a href="#">💼 LinkedIn</a>
+      <a href="#">📘 Facebook</a>
+    </div>
+  </section>
+
+</aside>
+
+
+  <!-- LATEST POSTS -->
+  <section class="latest-posts" id="latest">
+  <h2 class="section-title">Artikel Terbaru</h2>
+  <div class="posts-grid">
+
+    <article class="post-card">
+      <img src="assets/images/sample1.jpg" alt="Gambar artikel 1">
+      <div class="post-content">
+        <h3><a href="#">Mengenal Struktur HTML5 Modern</a></h3>
+        <p>Pelajari elemen baru di HTML5 dan cara membangun halaman yang semantik dan SEO-friendly.</p>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <img src="assets/images/sample2.jpg" alt="Gambar artikel 2">
+      <div class="post-content">
+        <h3><a href="#">Dasar CSS Grid Layout</a></h3>
+        <p>Pahami konsep grid container, kolom, dan baris untuk membuat layout responsif dengan mudah.</p>
+      </div>
+    </article>
+
+    <article class="post-card">
+      <img src="assets/images/sample3.jpg" alt="Gambar artikel 3">
+      <div class="post-content">
+        <h3><a href="#">Tips Efektif Belajar JavaScript</a></h3>
+        <p>Strategi belajar JavaScript dari nol hingga mahir tanpa kebingungan dengan sintaks kompleks.</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+
+  <!-- CATEGORY BLOCKS -->
+  <section class="category-blocks" id="categories">
+  <h2 class="section-title">Jelajahi Berdasarkan Kategori</h2>
+
+  <div class="category-grid">
+    <div class="category-card frontend">
+      <h3>Front-End</h3>
+      <p>HTML, CSS, JavaScript, dan framework modern untuk tampilan antarmuka web.</p>
+      <a href="#" class="btn-category">Lihat Artikel</a>
+    </div>
+
+    <div class="category-card backend">
+      <h3>Back-End</h3>
+      <p>Server, API, database, dan logika aplikasi untuk web dinamis dan scalable.</p>
+      <a href="#" class="btn-category">Lihat Artikel</a>
+    </div>
+
+    <div class="category-card uiux">
+      <h3>UI/UX</h3>
+      <p>Desain pengalaman pengguna, wireframe, dan prinsip desain antarmuka efektif.</p>
+      <a href="#" class="btn-category">Lihat Artikel</a>
+    </div>
+
+    <div class="category-card tools">
+      <h3>Tools & Resources</h3>
+      <p>Peralatan pengembangan, IDE, ekstensi, dan resource pembelajaran.</p>
+      <a href="#" class="btn-category">Lihat Artikel</a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+  <footer>
+  <p>&copy; 2025 EduBlog. All rights reserved.</p>
+</footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
