@@ -1,61 +1,70 @@
-@import url("components/hero/_hero.css");
-/* _hero.css — Hero Section */
-
 .hero {
-  background: 
-    linear-gradient(135deg, rgba(0, 123, 255, 0.6), rgba(0, 180, 216, 0.6)),
-    url("../assets/images/hero-bg.jpg") center/cover no-repeat;
+  position: relative;
+  background-size: cover;
+  background-position: center;
   color: #fff;
-  padding: 4rem 2rem;
-  border-radius: 4px;
   text-align: left;
+  padding: 4rem 2rem;
+  border-radius: 6px;
+  overflow: hidden;
 }
 
+/* Lapisan gradien transparan */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(0, 123, 255, 0.6), rgba(0, 180, 216, 0.6));
+  z-index: 1;
+}
 
+/* Konten di atas overlay */
 .hero-content {
-  max-width: 800px;
-  margin: auto;
+  position: relative;
+  z-index: 2;
+  max-width: 700px;
 }
 
 .hero-title {
   font-size: 2rem;
-  margin-bottom: 15px;
   font-weight: 700;
+  margin-bottom: 1rem;
 }
 
 .hero-subtitle {
-  font-size: 1rem;
-  margin-bottom: 25px;
-  color: #e3f2fd;
-  line-height: 1.7;
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
 }
 
 .hero-btn {
   display: inline-block;
-  background: #fff;
+  background: #ffffff;
   color: #007bff;
   font-weight: 600;
-  padding: 10px 20px;
-  border-radius: 6px;
+  padding: 0.75rem 1.25rem;
+  border-radius: 4px;
   text-decoration: none;
-  transition: 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 .hero-btn:hover {
-  background: #e3f2fd;
-  color: #0056b3;
-  transform: translateY(-2px);
+  background: #007bff;
+  color: #fff;
 }
 
-/* --- Responsif untuk mobile-first --- */
+/* Responsif untuk mobile */
 @media (max-width: 600px) {
   .hero {
-    padding: 40px 15px;
+    padding: 3rem 1.5rem;
+    text-align: center;
   }
   .hero-title {
     font-size: 1.6rem;
   }
   .hero-subtitle {
-    font-size: 0.95rem;
+    font-size: 1rem;
   }
 }
