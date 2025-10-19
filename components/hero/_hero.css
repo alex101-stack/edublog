@@ -2,6 +2,7 @@
 /* _hero.css — Hero Section */
 
 .hero {
+  background: url('./assets/images/hero-bg.jpg') center/cover no-repeat;
   background: linear-gradient(135deg, #007bff, #00b4d8);
   color: #fff;
   text-align: center;
