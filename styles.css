@@ -201,6 +201,18 @@ body {
   box-shadow: 0 2px 8px rgba(0,0,0,0.05);
 }
 
+header.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #ffffffd9; /* semi transparan */
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
 .header-container {
   display: flex;
   justify-content: space-between;
