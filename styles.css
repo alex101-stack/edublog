@@ -1,5 +1,6 @@
 @import url('./components/hero/_hero.css');
 @import url("./components/_global/_sidebar.css");
+@import url("./components/latest-posts/_latest.css");
 
 
 /* styles.css — Global Layout & Typography */
