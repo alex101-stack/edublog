@@ -1,0 +1,86 @@
+/* Sidebar Styles */
+.sidebar {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  width: 300px;
+  flex-shrink: 0;
+}
+
+.sidebar .widget {
+  margin-bottom: 2rem;
+}
+
+.widget-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-bottom: 2px solid #007bff;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.author-photo {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.social-links li a {
+  display: inline-block;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  background: #f1f3f5;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  transition: background 0.3s;
+}
+
+.social-links li a:hover {
+  background: #007bff;
+  color: #fff;
+}
+
+.newsletter-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.newsletter-form input {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.newsletter-form button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 0.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.newsletter-form button:hover {
+  background: #0056b3;
+}
+
+/* 📱 Mobile Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    margin-top: 2rem;
+  }
+}
